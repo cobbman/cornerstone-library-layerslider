@@ -16,14 +16,14 @@
 
 <?php
 
-class CSL_Template_Name_Item extends Cornerstone_Element_Base {
+class CSL_LayerSlider_Item extends Cornerstone_Element_Base {
 
   public function data() {
     return array(
-      'name'        => 'csl-template-name-item',
-      'title'       => __( 'Template Name Item', csl18n() ),
+      'name'        => 'csl-layerslider-item',
+      'title'       => __( 'Layerslider Item', csl18n() ),
       'section'     => '_content',
-      'description' => __( 'Template Name Item description.', csl18n() ),
+      'description' => __( 'Layerslider Item description.', csl18n() ),
       'supports'    => array( 'id', 'class', 'style' ),
       'render'      => false,
       'delegate'    => true
@@ -44,7 +44,7 @@ class CSL_Template_Name_Item extends Cornerstone_Element_Base {
       'content', // control name
       'editor',  // control type
       __( 'Content', csl18n() ), // message
-      __( 'Include your desired content for your Template Name Item here.', csl18n() ), // tooltip text
+      __( 'Include your desired content for your Layerslider Item here.', csl18n() ), // tooltip text
       '' // placehlder text
     );
 

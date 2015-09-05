@@ -16,16 +16,16 @@
 
 <?php
 
-class CSL_Template_Name extends Cornerstone_Element_Base {
+class CSL_LayerSlider extends Cornerstone_Element_Base {
 
   public function data() {
     return array(
-      'name'        => 'csl-template-name',
-      'title'       => __( 'Template Name', csl18n() ),
+      'name'        => 'csl-layerslider',
+      'title'       => __( 'Layerslider', csl18n() ),
       'section'     => 'content',
-      'description' => __( 'Template Name description.', csl18n() ),
+      'description' => __( 'Layerslider description.', csl18n() ),
       'supports'    => array( 'id', 'class', 'style' ),
-      'childType'   => 'csl-template-name-item',
+      'childType'   => 'csl-layerslider-item',
       'renderChild' => true
     );
   }
@@ -35,14 +35,14 @@ class CSL_Template_Name extends Cornerstone_Element_Base {
     $this->addControl(
       'elements', // control name
       'sortable', // control type
-      __( 'Template Name Items', csl18n() ), // Message
-      __( 'Add a new item to your Template Name.', csl18n() ), // Tooltip text
+      __( 'Layerslider Items', csl18n() ), // Message
+      __( 'Add a new item to your Layerslider.', csl18n() ), // Tooltip text
       array(
-        array( 'title' => __( 'Template Name 1', csl18n() ), 'content' => __( 'Add some content to your Template Name here.', csl18n() ) ),
-        array( 'title' => __( 'Template Name 2', csl18n() ), 'content' => __( 'Add some content to your Template Name here.', csl18n() ) )
+        array( 'title' => __( 'Layerslider 1', csl18n() ), 'content' => __( 'Add some content to your Layerslider here.', csl18n() ) ),
+        array( 'title' => __( 'Layerslider 2', csl18n() ), 'content' => __( 'Add some content to your Layerslider here.', csl18n() ) )
       ), // placeholder content or default items
       array(
-        'newTitle' => __( 'Template Name %s', csl18n() ),
+        'newTitle' => __( 'Layerslider %s', csl18n() ),
         'floor'    => 1
       ) // new item format
     );
@@ -68,12 +68,12 @@ class CSL_Template_Name extends Cornerstone_Element_Base {
 
       $e['parent_id'] = ( $link_items == 'true' && $id != '' ) ? $id : '';
 
-      $contents .= '[csl_template_name_item title="' . $e['title'] . '" ';
-      $contents .= 'open="' . $e['open']  . '"' . $item_extra . ']' . $e['content'] . '[/csl_template_name_item]';
+      $contents .= '[csl_layerslider_item title="' . $e['title'] . '" ';
+      $contents .= 'open="' . $e['open']  . '"' . $item_extra . ']' . $e['content'] . '[/csl_layerslider_item]';
 
     }
 
-    $shortcode = "[csl_template_name{$extra}]{$contents}[/csl_template_name]";
+    $shortcode = "[csl_layerslider{$extra}]{$contents}[/csl_layerslider]";
 
     return $shortcode;
 

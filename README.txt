@@ -40,11 +40,11 @@ _____________________________________________________________
 2. It is strongly suggested that you keep the Plugin name in the following format:
    "Cornerstone Library: {{your custom name here}}"
 
-3. You'll need to replace each instance of "Template Name" with your own custom name: (recommend search-replace across all files, case sensitive)
-   - Template_Name
-   - template_name
-   - template-name
-   - Template Name
+3. You'll need to replace each instance of "Layerslider" with your own custom name: (recommend search-replace across all files, case sensitive)
+   - LayerSlider
+   - layerslider
+   - layerslider
+   - Layerslider
 
 4. Here's some useful tips for building your own element:
   - Browse the elements already made in Cornerstone to see what types of fields you can use: yoursite.com/wp-content/plugins/cornerstone/includes/modules/elements
